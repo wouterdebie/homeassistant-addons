@@ -6,7 +6,7 @@ Run a Datadog agent as an addon.
 
 ## About
 
-This add-on runs a datadog agent. Simply configure with a valid API key and configure the [Datadog integration](https://www.home-assistant.io/integrations/datadog/) to connect to `6f10207e-datadog`, port 8125.
+This add-on runs a datadog agent. Simply configure with a valid API key and configure the [Datadog integration](https://www.home-assistant.io/integrations/datadog/) to connect to the hostname on the add-on info page (e.g. `6f10207e-datadog`), port 8125.
 
 [aarch64-shield]: https://img.shields.io/badge/aarch64-yes-green.svg
 [amd64-shield]: https://img.shields.io/badge/amd64-yes-green.svg
