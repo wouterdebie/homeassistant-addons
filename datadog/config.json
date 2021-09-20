@@ -20,5 +20,5 @@
   "schema": {
     "api_key": "str"
   },
-  "image": "wouterdebie/{arch}-addon-datadog"
+  "image": "wdebie/{arch}-addon-datadog"
 }
