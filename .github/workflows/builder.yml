@@ -117,4 +117,3 @@ jobs:
             --${{ matrix.arch }} \
             --target /data/${{ matrix.addon }} \
             -b main
-            --addon
