@@ -1,6 +1,6 @@
 {
   "name": "Datadog",
-  "version": "1",
+  "version": "1.0",
   "slug": "datadog",
   "description": "Run a datadog agent.",
   "url": "https://github.com/wouterdebie/homeassistant-addons/tree/master/datadog",
@@ -9,15 +9,15 @@
   "boot": "auto",
   "host_network": "true",
   "ports": {
-	  "8125/udp": 8125
+    "8125/udp": 8125
   },
   "ports_description": {
-	  "8125/udp": "Dogstatd port"
+    "8125/udp": "Dogstatd port"
   },
   "options": {
-	  "api_key": "Datadog API key"
+    "api_key": "Datadog API key"
   },
   "schema": {
-  	"api_key": "str"
+    "api_key": "str"
   }
 }
