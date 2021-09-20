@@ -21,5 +21,5 @@ jobs:
         with:
           args: |
             --all \
-            --target /datadog \
+            --target /data/datadog \
             --docker-hub userspace-name
