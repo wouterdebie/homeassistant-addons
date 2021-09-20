@@ -6,7 +6,7 @@ Run a Datadog agent as an addon.
 
 ## About
 
-This add-on runs a datadog agent. Simply configure with a valid API key and configure the Datadog integration to connect to `[FILL IN]`
+This add-on runs a datadog agent. Simply configure with a valid API key and configure the Datadog integration to connect to `6f10207e_datadog`, port 8125.
 
 [aarch64-shield]: https://img.shields.io/badge/aarch64-yes-green.svg
 [amd64-shield]: https://img.shields.io/badge/amd64-yes-green.svg

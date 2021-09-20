@@ -1,5 +1,5 @@
 {
-    "name": "Datadog add-on repository",
+    "name": "Home Assistant add-ons repository",
     "url": "https://github.com/wouterdebie/homeassistant-addons",
     "maintainer": "Wouter de Bie <wouter@evenflow.nl>"
 }
