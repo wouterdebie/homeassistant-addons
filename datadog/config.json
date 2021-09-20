@@ -1,6 +1,6 @@
 {
   "name": "Datadog",
-  "version": "1.0",
+  "version": "0.1",
   "slug": "datadog",
   "description": "Run a datadog agent.",
   "url": "https://github.com/wouterdebie/homeassistant-addons/tree/master/datadog",
