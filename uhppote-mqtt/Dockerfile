@@ -1,7 +1,7 @@
 ARG BUILD_FROM
 FROM liuchong/rustup:stable-musl as builder
 RUN apt-get update
-RUN apt-get install git libc6-dev
+RUN apt-get -y install git libc6-dev
 RUN git clone https://github.com/wouterdebie/uhppote-mqtt.git /src
 RUN rustup target add aarch64-unknown-linux-musl
 
