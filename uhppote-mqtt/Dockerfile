@@ -1,13 +1,9 @@
 ARG BUILD_FROM
-FROM liuchong/rustup:stable-musl as builder
-RUN apt-get update
-RUN apt-get -y install git libc6-dev
+FROM messense/rust-musl-cross:aarch64-musl as builder
 RUN git clone https://github.com/wouterdebie/uhppote-mqtt.git /src
-RUN rustup target add aarch64-unknown-linux-musl
-
 
 WORKDIR /src
-RUN cargo build --target= aarch64-unknown-linux-musl --release
+RUN cargo build --release
 
 
 FROM $BUILD_FROM
