@@ -1,5 +1,5 @@
 ARG BUILD_FROM
-FROM rust:1.62.0 as builder
+FROM rust:1.62.0-alpine3.16 as builder
 RUN apk add git
 RUN git clone https://github.com/wouterdebie/uhppote-mqtt.git /src
 
