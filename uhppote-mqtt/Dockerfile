@@ -4,7 +4,7 @@ WORKDIR /
 RUN apk add -qU --no-cache coreutils curl git go musl-dev gcc clang
 
 RUN curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh -s -- -y
-ENV PATH=$HOME/.cargo/bin:$PATH
+ENV PATH="$HOME/.cargo/bin:$PATH"
 RUN echo ${PATH}
 RUN ls $HOME/.cargo/bin
 # RUN rustup target add armv7-unknown-linux-musleabihf
@@ -12,7 +12,7 @@ RUN ls $HOME/.cargo/bin
 RUN git clone https://github.com/wouterdebie/uhppote-mqtt.git /src
 
 WORKDIR /src
-RUN cargo build --release
+RUN /.cargo/bin/cargo build --release
 RUN cp target/release/uhppote-mqtt /
 WORKDIR /
 RUN rm -rf /src
