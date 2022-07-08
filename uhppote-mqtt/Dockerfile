@@ -1,7 +1,7 @@
 ARG BUILD_FROM
 FROM $BUILD_FROM
 WORKDIR /
-RUN apk add -qU --no-cache coreutils curl git go musl-dev
+RUN apk add -qU --no-cache coreutils curl git go musl-dev gcc
 
 RUN curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh -s -- -y
 ENV PATH=/root/.cargo/bin:$PATH
@@ -12,6 +12,6 @@ WORKDIR /src
 RUN cargo build --release
 RUN cp target/release/uhppote-mqtt /
 WORKDIR /
-RUN rm -rf /uhppote-mqtt
+RUN rm -rf /src
 
 CMD [ "/uhppote-mqtt", "-c", "/data/options.json" ]
