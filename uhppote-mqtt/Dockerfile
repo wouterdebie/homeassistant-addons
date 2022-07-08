@@ -4,7 +4,9 @@ WORKDIR /
 RUN apk add -qU --no-cache coreutils curl git go musl-dev gcc clang
 
 RUN curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh -s -- -y
-ENV PATH=/root/.cargo/bin:$PATH
+ENV PATH=$HOME/.cargo/bin:$PATH
+
+RUN rustup target add armv7-unknown-linux-musleabihf
 
 RUN git clone https://github.com/wouterdebie/uhppote-mqtt.git /src
 
