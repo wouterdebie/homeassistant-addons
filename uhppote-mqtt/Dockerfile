@@ -7,7 +7,7 @@ RUN rustup target add aarch64-unknown-linux-musl
 
 
 WORKDIR /src
-RUN cargo build --release
+RUN cargo build --target= aarch64-unknown-linux-musl --release
 
 
 FROM $BUILD_FROM
