@@ -6,11 +6,8 @@ FROM $BUILD_FROM
 ARG TEMPIO_VERSION BUILD_ARCH UHPPOTE_VERSION
 
 RUN \
-    curl -sSLf -o uhppote-mqtt-nightly-${BUILD_ARCH}.tar.gz \
-    "https://github.com/wouterdebie/uhppote-mqtt/releases/download/${UHPPOTE_VERSION}/uhppote-mqtt-nightly-${BUILD_ARCH}.tar.gz"
+    curl -sSLf \
+    "https://github.com/wouterdebie/uhppote-mqtt/releases/download/${UHPPOTE_VERSION}/uhppote-mqtt-nightly-${BUILD_ARCH}.tar.gz | tar zxv -C /usr/bin"
 
 
-RUN tar zxvf uhppote-mqtt-nightly-${BUILD_ARCH}.tar.gz
-# Copy root filesystem
-COPY uhppote-mqtt /usr/bin
 CMD [ "/usr/bin/uhppote-mqtt", "-c", "/data/options.json" ]
