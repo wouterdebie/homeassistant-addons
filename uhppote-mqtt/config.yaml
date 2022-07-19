@@ -30,3 +30,4 @@ options:
 services:
   - mqtt:need
 hassio_api: true
+hassio_role: default
