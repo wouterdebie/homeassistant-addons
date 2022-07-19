@@ -10,4 +10,6 @@ RUN \
     "https://github.com/wouterdebie/uhppote-mqtt/releases/download/${UHPPOTE_VERSION}/uhppote-mqtt-nightly-${BUILD_ARCH}.tar.gz" | tar zxv -C /usr/bin
 
 
+RUN ls -l /usr/bin
+
 CMD [ "/usr/bin/uhppote-mqtt", "-c", "/data/options.json" ]
