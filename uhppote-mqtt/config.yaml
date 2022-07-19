@@ -8,6 +8,7 @@ arch:
   - amd64
   - armv7
   - i386
+image: "ghcr.io/wouterdebie/{arch}-uhppote-mqtt"
 schema:
   uhppote_device_id: int
   name: str
