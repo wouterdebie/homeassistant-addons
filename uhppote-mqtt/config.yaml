@@ -13,8 +13,8 @@ ports:
   60001/udp: 60001
 schema:
   uhppote_device_id: int
-  uhppote_device_ip: int
-  bind: int
+  uhppote_device_ip: str
+  bind: str
   name: str
   door: int
   mqtt_id: str

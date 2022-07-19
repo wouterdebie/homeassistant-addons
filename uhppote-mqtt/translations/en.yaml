@@ -1,0 +1,25 @@
+
+---
+configuration:
+  uhppote_device_id:
+    name: UHPPOTE Device ID
+    description: >-
+      ID of the UHPPOTE device. This can be found by
+  uhppote_device_ip:
+    name: UHPPOTE Device IP Address
+    description: >-
+      Since this add on runs in a container, communication with the UHPPOTE device
+      doesn't use the broacast address.
+  bind:
+    name: Bind address
+    description: >-
+      What IP and port to bind to. Make sure that the network port is opened.
+  name:
+    name: Name
+    description: >-
+      The name to show up in HASS.
+  door:
+    name: Door
+    description: >-
+      Number of the door to use
+
