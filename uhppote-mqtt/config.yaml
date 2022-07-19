@@ -29,3 +29,4 @@ options:
   base_topic: "homeassistant/lock/uhppote"
 services:
   - mqtt:need
+hassio_api: true
