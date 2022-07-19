@@ -9,8 +9,12 @@ arch:
   - armv7
   - i386
 image: "ghcr.io/wouterdebie/{arch}-uhppote-mqtt"
+ports:
+  60001/udp: 60001
 schema:
   uhppote_device_id: int
+  uhppote_device_ip: int
+  bind: int
   name: str
   door: int
   mqtt_id: str
@@ -21,6 +25,8 @@ schema:
   base_topic: str
 options:
   uhppote_device_id: null
+  uhppote_device_ip: null
+  bind: "0.0.0.0:60001"
   name: null
   door: 1
   mqtt_id: "uhppote-gate"
