@@ -7,7 +7,7 @@ ARG TEMPIO_VERSION BUILD_ARCH UHPPOTE_VERSION
 
 RUN \
     curl -sSLf \
-    "https://github.com/wouterdebie/uhppote-mqtt/releases/download/${UHPPOTE_VERSION}/uhppote-mqtt-nightly-${BUILD_ARCH}.tar.gz | tar zxv -C /usr/bin"
+    "https://github.com/wouterdebie/uhppote-mqtt/releases/download/${UHPPOTE_VERSION}/uhppote-mqtt-nightly-${BUILD_ARCH}.tar.gz" | tar zxv -C /usr/bin"
 
 
 CMD [ "/usr/bin/uhppote-mqtt", "-c", "/data/options.json" ]
