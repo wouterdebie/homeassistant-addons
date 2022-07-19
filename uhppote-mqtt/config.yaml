@@ -1,12 +1,11 @@
 name: "UHPPOTE MQTT"
 description: "UHPPOTE to MQTT bridge"
-version: "1.0.0"
+version: "0.0.2"
 slug: "uhppote"
 init: false
 arch:
   - aarch64
   - amd64
-  - armhf
   - armv7
   - i386
 schema:
