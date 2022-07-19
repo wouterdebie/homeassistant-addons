@@ -6,7 +6,7 @@ FROM $BUILD_FROM
 ARG TEMPIO_VERSION BUILD_ARCH UHPPOTE_VERSION
 
 RUN \
-    curl -sSLf \
+    curl -sSLf -o uhppote-mqtt-nightly-${BUILD_ARCH}.tar.gz \
     "https://github.com/wouterdebie/uhppote-mqtt/releases/download/${UHPPOTE_VERSION}/uhppote-mqtt-nightly-${BUILD_ARCH}.tar.gz"
 
 
