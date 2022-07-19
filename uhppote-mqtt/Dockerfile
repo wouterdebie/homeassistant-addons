@@ -3,14 +3,11 @@ ARG BUILD_FROM
 FROM $BUILD_FROM
 
 # Execute during the build of the image
-ARG TEMPIO_VERSION BUILD_ARCH
-
-RUN echo ${BUILD_ARCH}
-RUN echo ${TEMPIO_VERSION}
+ARG TEMPIO_VERSION BUILD_ARCH UHPPOTE_VERSION
 
 RUN \
     curl -sSLf \
-    "https://github.com/wouterdebie/uhppote-mqtt/releases/download/v${TEMPIO_VERSION}/uhppote-mqtt-nightly-${BUILD_ARCH}.tar.gz"
+    "https://github.com/wouterdebie/uhppote-mqtt/releases/download/v${UHPPOTE_VERSION}/uhppote-mqtt-nightly-${BUILD_ARCH}.tar.gz"
 
 
 RUN tar zxvf uhppote-mqtt-nightly-${BUILD_ARCH}.tar.gz
