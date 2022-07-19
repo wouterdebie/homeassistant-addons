@@ -12,3 +12,7 @@ RUN \
 RUN chmod +x /usr/bin/uhppote-mqtt
 
 CMD [ "/usr/bin/uhppote-mqtt", "-c", "/data/options.json" ]
+LABEL \
+    io.hass.version="VERSION" \
+    io.hass.type="addon" \
+    io.hass.arch="armv7|aarch64|i386|amd64"
