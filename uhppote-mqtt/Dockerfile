@@ -9,6 +9,7 @@ RUN \
     curl -sSLf \
     "https://github.com/wouterdebie/uhppote-mqtt/releases/download/${UHPPOTE_VERSION}/uhppote-mqtt-nightly-${BUILD_ARCH}.tar.gz" | tar zxv -C /usr/bin
 
+# Make sure the uhppote-mqtt binary is executable
 RUN chmod +x /usr/bin/uhppote-mqtt
 
 # Copy root filesystem
