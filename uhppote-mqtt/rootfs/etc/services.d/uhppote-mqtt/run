@@ -4,4 +4,5 @@
 # Runs the uhppote-mqtt daemon
 # ==============================================================================
 bashio::log.info "Starting uhppote-mqtt..."
+export RUST_LOG="info"
 exec /usr/bin/uhppote-mqtt -c /data/options.json
