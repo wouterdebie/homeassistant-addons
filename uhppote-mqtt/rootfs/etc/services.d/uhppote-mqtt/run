@@ -1,0 +1,7 @@
+#!/usr/bin/with-contenv bashio
+# ==============================================================================
+# Home Assistant Community Add-on: uhppote-mqtt
+# Runs the uhppote-mqtt daemon
+# ==============================================================================
+bashio::log.info "Starting uhppote-mqtt..."
+exec /usr/bin/uhppote-mqtt -c /data/options.json
