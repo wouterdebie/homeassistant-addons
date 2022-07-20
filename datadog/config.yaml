@@ -21,4 +21,4 @@ options:
   api_key: Datadog API key
 schema:
   api_key: str
-image: wdebie/{arch}-addon-datadog
+image: image: "ghcr.io/wouterdebie/{arch}-datadog
