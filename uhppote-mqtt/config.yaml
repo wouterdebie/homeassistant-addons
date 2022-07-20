@@ -1,6 +1,6 @@
 name: "UHPPOTE MQTT"
 description: "UHPPOTE to MQTT bridge"
-version: "0.0.10"
+version: "0.0.11"
 slug: "uhppote"
 init: false
 arch:
