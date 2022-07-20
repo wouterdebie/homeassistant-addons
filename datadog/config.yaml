@@ -2,14 +2,14 @@
 name: Datadog
 version: 0.1.2
 slug: datadog
-description: Run a datadog agent.
+description: "Run a datadog agent as an addon"
 url: https://github.com/wouterdebie/homeassistant-addons/tree/master/datadog
 arch:
-- armhf
-- armv7
-- aarch64
-- amd64
-- i386
+  - armhf
+  - armv7
+  - aarch64
+  - amd64
+  - i386
 startup: services
 boot: auto
 host_network: 'true'
@@ -21,4 +21,4 @@ options:
   api_key: Datadog API key
 schema:
   api_key: str
-image: image: "ghcr.io/wouterdebie/{arch}-datadog
+image: "ghcr.io/wouterdebie/{arch}-datadog"
